@@ -12,64 +12,68 @@ export const Philosophy: React.FC = () => {
           </h2>
           
           <div className="space-y-12">
-            <div>
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-cluely bg-[#5B8FDE]/10 flex items-center justify-center shrink-0">
-                    <Clock className="w-6 h-6 text-[#5B8FDE]" />
-                  </div>
-                  <div className="flex items-baseline gap-3">
-                    <span className="text-2xl font-black text-[#5B8FDE]">1.</span>
-                    <h3 className="text-2xl font-black text-[#1F2937]">Weeks, Not Months</h3>
-                  </div>
+            <div className="flex flex-col md:flex-row md:items-start gap-8">
+              <div className="flex-1 md:max-w-2xl">
+                <div className="flex items-baseline gap-3 mb-4">
+                  <span className="text-2xl font-black text-[#5B8FDE]">1.</span>
+                  <h3 className="text-2xl font-black text-[#1F2937]">Weeks, Not Months</h3>
                 </div>
-                <p className="text-xl text-[#6B7280] leading-relaxed font-medium ml-20">
+                <p className="text-xl text-[#6B7280] leading-relaxed font-medium">
                   We deliver a functional, custom MVP for your tutoring centre in just a few weeks. While traditional agencies spend months in discovery, we use high-velocity development to get your infrastructure live and operational immediately.
                 </p>
+              </div>
+              <div className="hidden md:block w-px bg-gray-200 flex-shrink-0"></div>
+              <div className="flex-shrink-0 md:ml-16 overflow-hidden rounded-lg border border-gray-200 h-48 md:h-60 flex items-center justify-center">
+                <img src="/weeks-not-months.png" alt="Weeks Not Months" className="w-64 md:w-80 object-contain" onError={(e) => { console.error('Failed to load image:', e); }} />
+              </div>
             </div>
 
-            <div>
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-cluely bg-[#5B8FDE]/10 flex items-center justify-center shrink-0">
-                    <RefreshCw className="w-6 h-6 text-[#5B8FDE]" />
-                  </div>
-                  <div className="flex items-baseline gap-3">
-                    <span className="text-2xl font-black text-[#5B8FDE]">2.</span>
-                    <h3 className="text-2xl font-black text-[#1F2937]">The 100% Conviction Period</h3>
-                  </div>
+            <div className="flex flex-col md:flex-row md:items-start gap-8">
+              <div className="flex-1 md:max-w-2xl">
+                <div className="flex items-baseline gap-3 mb-4">
+                  <span className="text-2xl font-black text-[#5B8FDE]">2.</span>
+                  <h3 className="text-2xl font-black text-[#1F2937]">The 100% Conviction Period</h3>
                 </div>
-                <p className="text-xl text-[#6B7280] leading-relaxed font-medium ml-20">
+                <p className="text-xl text-[#6B7280] leading-relaxed font-medium">
                   Delivery is just the start. We work alongside you for a month of rapid iteration, refining every feature until you have 100% conviction that the platform is perfectly curated to your specific business logic.
                 </p>
+              </div>
+              <div className="hidden md:block w-px bg-gray-200 flex-shrink-0"></div>
+              <div className="flex-shrink-0 md:ml-16 overflow-hidden rounded-lg border border-gray-200">
+                <img src="/100-percent-confidence.png" alt="100% Confidence" className="w-56 h-56 md:w-72 md:h-72 object-cover" onError={(e) => { console.error('Failed to load image:', e); }} />
+              </div>
             </div>
 
-            <div>
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-cluely bg-[#5B8FDE]/10 flex items-center justify-center shrink-0">
-                    <Award className="w-6 h-6 text-[#5B8FDE]" />
-                  </div>
-                  <div className="flex items-baseline gap-3">
-                    <span className="text-2xl font-black text-[#5B8FDE]">3.</span>
-                    <h3 className="text-2xl font-black text-[#1F2937]">Elite Engineering Talent</h3>
-                  </div>
+            <div className="flex flex-col md:flex-row md:items-start gap-8">
+              <div className="flex-1 md:max-w-2xl">
+                <div className="flex items-baseline gap-3 mb-4">
+                  <span className="text-2xl font-black text-[#5B8FDE]">3.</span>
+                  <h3 className="text-2xl font-black text-[#1F2937]">Elite Engineering Talent</h3>
                 </div>
-                <p className="text-xl text-[#6B7280] leading-relaxed font-medium ml-20">
+                <p className="text-xl text-[#6B7280] leading-relaxed font-medium">
                   Your backend isn't built by entry-level devs. Our team consists of world-class engineers sourced from top-tier software development firms, bringing enterprise-grade architecture to the tutoring industry.
                 </p>
+              </div>
+              <div className="hidden md:block w-px bg-gray-200 flex-shrink-0"></div>
+              <div className="flex-shrink-0 md:ml-16 overflow-hidden rounded-lg border border-gray-200">
+                <img src="/elite-engineering-talent.png" alt="Elite Engineering Talent" className="w-64 md:w-80 h-56 md:h-72 object-contain" onError={(e) => { console.error('Failed to load image:', e); }} />
+              </div>
             </div>
 
-            <div>
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-cluely bg-[#5B8FDE]/10 flex items-center justify-center shrink-0">
-                    <Sparkles className="w-6 h-6 text-[#5B8FDE]" />
-                  </div>
-                  <div className="flex items-baseline gap-3">
-                    <span className="text-2xl font-black text-[#5B8FDE]">4.</span>
-                    <h3 className="text-2xl font-black text-[#1F2937]">Zero-Template Curation</h3>
-                  </div>
+            <div className="flex flex-col md:flex-row md:items-start gap-8">
+              <div className="flex-1 md:max-w-2xl">
+                <div className="flex items-baseline gap-3 mb-4">
+                  <span className="text-2xl font-black text-[#5B8FDE]">4.</span>
+                  <h3 className="text-2xl font-black text-[#1F2937]">Zero-Template Curation</h3>
                 </div>
-                <p className="text-xl text-[#6B7280] leading-relaxed font-medium ml-20">
+                <p className="text-xl text-[#6B7280] leading-relaxed font-medium">
                   We start all projects from scratch. Building bespoke software that mirrors exactly how you already operate, ensuring the tech supports your unique pedagogy rather than hindering it.
                 </p>
+              </div>
+              <div className="hidden md:block w-px bg-gray-200 flex-shrink-0"></div>
+              <div className="flex-shrink-0 md:ml-16 overflow-hidden rounded-lg border border-gray-200">
+                <img src="/zero-template-curation.png" alt="Zero-Template Curation" className="w-64 md:w-80 h-56 md:h-72 object-contain" onError={(e) => { console.error('Failed to load image:', e); }} />
+              </div>
             </div>
           </div>
         </div>
