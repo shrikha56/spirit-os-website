@@ -1,19 +1,77 @@
 
 import React from 'react';
-import { Database, Cpu, Code2, Workflow, Zap, ShieldCheck } from 'lucide-react';
+import { Database, Cpu, Code2, Workflow, Zap, ShieldCheck, Clock, RefreshCw, Award, Sparkles } from 'lucide-react';
 
 export const Philosophy: React.FC = () => {
   return (
     <section id="philosophy" className="py-32 px-6 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto">
-        <div className="max-w-3xl mb-24">
-          <span className="text-[#5B8FDE] font-bold text-sm tracking-widest uppercase mb-4 block">The Anti-SaaS Hook</span>
-          <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-8 text-[#1F2937] leading-tight">
-            Stop paying for <br /> features you <span className="text-[#5B8FDE]">don't use.</span>
+        <div className="max-w-4xl mb-24">
+          <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-12 text-[#1F2937] leading-tight">
+            Our <span className="text-[#5B8FDE]">Competitive Edge</span>
           </h2>
-          <p className="text-xl text-[#6B7280] leading-relaxed font-medium">
-            Generic SaaS platforms force your business into their logic. We replace brittle spreadsheets with hardened, bespoke infrastructure that evolves with you.
-          </p>
+          
+          <div className="space-y-12">
+            <div>
+                <div className="flex items-start gap-4 mb-3">
+                  <div className="w-10 h-10 rounded-cluely bg-[#5B8FDE]/10 flex items-center justify-center shrink-0">
+                    <Clock className="w-5 h-5 text-[#5B8FDE]" />
+                  </div>
+                  <div>
+                    <span className="text-2xl font-black text-[#5B8FDE]">1.</span>
+                    <h3 className="text-2xl font-black text-[#1F2937] inline-block ml-2">Weeks, Not Months</h3>
+                  </div>
+                </div>
+                <p className="text-xl text-[#6B7280] leading-relaxed font-medium ml-16">
+                  We deliver a functional, custom MVP for your tutoring centre in just a few weeks. While traditional agencies spend months in discovery, we use high-velocity development to get your infrastructure live and operational immediately.
+                </p>
+            </div>
+
+            <div>
+                <div className="flex items-start gap-4 mb-3">
+                  <div className="w-10 h-10 rounded-cluely bg-[#5B8FDE]/10 flex items-center justify-center shrink-0">
+                    <RefreshCw className="w-5 h-5 text-[#5B8FDE]" />
+                  </div>
+                  <div>
+                    <span className="text-2xl font-black text-[#5B8FDE]">2.</span>
+                    <h3 className="text-2xl font-black text-[#1F2937] inline-block ml-2">The 100% Conviction Period</h3>
+                  </div>
+                </div>
+                <p className="text-xl text-[#6B7280] leading-relaxed font-medium ml-16">
+                  Delivery is just the start. We work alongside you for a month of rapid iteration, refining every feature until you have 100% conviction that the platform is perfectly curated to your specific business logic.
+                </p>
+            </div>
+
+            <div>
+                <div className="flex items-start gap-4 mb-3">
+                  <div className="w-10 h-10 rounded-cluely bg-[#5B8FDE]/10 flex items-center justify-center shrink-0">
+                    <Award className="w-5 h-5 text-[#5B8FDE]" />
+                  </div>
+                  <div>
+                    <span className="text-2xl font-black text-[#5B8FDE]">3.</span>
+                    <h3 className="text-2xl font-black text-[#1F2937] inline-block ml-2">Elite Engineering Talent</h3>
+                  </div>
+                </div>
+                <p className="text-xl text-[#6B7280] leading-relaxed font-medium ml-16">
+                  Your backend isn't built by entry-level devs. Our team consists of world-class engineers sourced from top-tier software development firms, bringing enterprise-grade architecture to the tutoring industry.
+                </p>
+            </div>
+
+            <div>
+                <div className="flex items-start gap-4 mb-3">
+                  <div className="w-10 h-10 rounded-cluely bg-[#5B8FDE]/10 flex items-center justify-center shrink-0">
+                    <Sparkles className="w-5 h-5 text-[#5B8FDE]" />
+                  </div>
+                  <div>
+                    <span className="text-2xl font-black text-[#5B8FDE]">4.</span>
+                    <h3 className="text-2xl font-black text-[#1F2937] inline-block ml-2">Zero-Template Curation</h3>
+                  </div>
+                </div>
+                <p className="text-xl text-[#6B7280] leading-relaxed font-medium ml-16">
+                  We start all projects from scratch. Building bespoke software that mirrors exactly how you already operate, ensuring the tech supports your unique pedagogy rather than hindering it.
+                </p>
+            </div>
+          </div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
